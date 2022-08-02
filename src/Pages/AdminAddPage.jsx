@@ -1,21 +1,15 @@
 import React from "react";
-import {
-  Container,
-  TextField,
-  Select,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Button,
-} from "@mui/material";
+import { Container, TextField, Button } from "@mui/material";
 import { AdminContext } from "../contexts/AdminProvider";
 
-function AdminPage() {
+// ! Add
+function AdminAddPage() {
   const { sendMakaroons } = React.useContext(AdminContext);
 
   const [name, setName] = React.useState("");
   const [taste, setTaste] = React.useState("");
   const [price, setPrice] = React.useState("");
+  const [photo, setPhoto] = React.useState("");
 
   const handleSubmit = () => {
     const newMakaroons = {
@@ -33,6 +27,7 @@ function AdminPage() {
     setName("");
     setTaste("");
     setPrice("");
+    setPhoto("");
   };
   return (
     <div className="admi-add-page">
@@ -63,6 +58,12 @@ function AdminPage() {
             variant="standard"
             type="number"
           />
+          <TextField
+            value={photo}
+            onChange={(e) => setPhoto(e.target.value)}
+            label="Картинка"
+            variant="standard"
+          />
           <Button variant="outlined" type="submit">
             Добавить
           </Button>
@@ -72,4 +73,4 @@ function AdminPage() {
   );
 }
 
-export default AdminPage;
+export default AdminAddPage;

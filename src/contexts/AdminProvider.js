@@ -10,12 +10,19 @@ const reducer = (state, action) => {
       makaroons: action.payload,
     };
   }
+  if (action.type === "GET_MAKAROONS_TO_EDIT") {
+    return {
+      ...state,
+      makaroonsEdit: action.payload,
+    };
+  }
   return state;
 };
 
 function AdminProvider({ children }) {
   const [state, dispatch] = React.useReducer(reducer, {
     makaroons: [],
+    makaroonsEdit: null,
   });
 
   const sendMakaroons = (newMakaroons) => {
@@ -38,11 +45,44 @@ function AdminProvider({ children }) {
         dispatch(action);
       });
   };
+  // ! delte
+  const deletMakaroons = (id) => {
+    fetch(`${makaroonsApi}/${id}`, {
+      method: "DELETE",
+    }).then(() => getMakaroons());
+  };
+  // ! update
+  const getMakaroonsToEdit = (id) => {
+    fetch(`${makaroonsApi}/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        let action = {
+          type: "GET_MAKAROONS_TO_EDIT",
+          payload: data,
+        };
+        dispatch(action);
+      });
+  };
+  const saveEditedMakaroons = (editedMakaroons) => {
+    fetch(`${makaroonsApi}/${editedMakaroons.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editedMakaroons),
+    });
+  };
+
   const data = {
+    makaroons: state.makaroons,
+    makaroonsEdit: state.makaroonsEdit,
     sendMakaroons,
     getMakaroons,
+    deletMakaroons,
+    getMakaroonsToEdit,
+    saveEditedMakaroons,
   };
+
   return <AdminContext.Provider value={data}>{children}</AdminContext.Provider>;
 }
-
 export default AdminProvider;

@@ -2,10 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import AdminProvider from "./contexts/AdminProvider";
-import AdminPage from "./Pages/AdminPage";
+import AdminEditPage from "./Pages/AdminEditPage";
 import AllProductPage from "./Pages/AllProductPage";
 import BoxPage from "./Pages/BoxPage";
 import MainPage from "./Pages/MainPage";
+import UpdatePage from "./Pages/UpdatePage";
+import AdminAddPage from "./Pages/AdminAddPage";
 
 function Navigation() {
   return (
@@ -15,7 +17,9 @@ function Navigation() {
           <Navbar />
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/admin" element={<AdminPage />} />
+            <Route path="/adminadd" element={<AdminAddPage />} />
+            <Route path="/update" element={<UpdatePage />} />
+            <Route path="/admin/edit/:id" element={<AdminEditPage />} />
             <Route path="/allsweets" element={<AllProductPage />} />
             <Route path="/onlybox" element={<BoxPage />} />
           </Routes>

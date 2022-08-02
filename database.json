@@ -1,10 +1,11 @@
 {
   "makaroons": [
     {
-      "name": "tima gamboll",
-      "brand": "babl gum",
-      "price": 190,
-      "id": 1
+      "name": "sancho",
+      "brand": "felishis",
+      "price": 555,
+      "id": 6,
+      "photo": "https://www.indulgewithmimi.com/wp-content/uploads/2020/10/tips-how-to-bake-round-macaron-shells.jpg"
     }
   ]
 }
