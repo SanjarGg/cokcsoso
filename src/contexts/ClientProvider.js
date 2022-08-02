@@ -1,5 +1,5 @@
 import React from "react";
-import { makaroonsApi } from "../helpers/const";
+import { makaroonsApi } from "../helpers/Const";
 
 export const ClientContext = React.ClientContext();
 const reducer = (state, action) => {
@@ -30,6 +30,7 @@ function ClientProvider({ children }) {
   };
 
   const data = {
+    makaroons,
     getMakaroons,
   };
 
