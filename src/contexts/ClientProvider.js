@@ -1,12 +1,41 @@
 import React from "react";
+import { makaroonsApi } from "../helpers/const";
 
 export const ClientContext = React.ClientContext();
 const reducer = (state, action) => {
-  return;
+  if (action.payload === "GET_MAKAROONS") {
+    return {
+      ...state,
+      makaroons: action.payload,
+    };
+  }
+  return state;
 };
 
-function ClientProvider() {
-  return <div>ClientProvider</div>;
+function ClientProvider({ children }) {
+  const [state, dispatch] = React.useRedecer(reducer, {
+    makaroons: [],
+  });
+
+  const getMakaroons = () => {
+    fetch(makaroonsApi)
+      .then((res) => res.json())
+      .then((data) => {
+        let action = {
+          type: "GET_MAKAROONS",
+          payload: data,
+        };
+        dispatch(action);
+      });
+  };
+
+  const data = {
+    getMakaroons,
+  };
+
+  return (
+    <ClientContext.Provider value={data}>{children}</ClientContext.Provider>
+  );
 }
 
 export default ClientProvider;
