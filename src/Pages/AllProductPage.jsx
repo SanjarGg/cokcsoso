@@ -13,7 +13,11 @@ import { ClientContext } from "../contexts/ClientProvider";
 function AllProductPage() {
   const { getMakaroons, makaroons } = React.useContext(ClientContext);
 
-  React.useEffect(() => {}, []);
+  React.useEffect(() => {
+    getMakaroons();
+  }, []);
+
+  console.log(makaroons);
 
   return (
     <div className="all-products">
@@ -22,7 +26,7 @@ function AllProductPage() {
         <div className="products">
           {makaroons.map((item) => (
             <Card key={item.id} className="products-card">
-              <CardMedia component="img" height={140} image={item.photo} />
+              <CardMedia component="img" height={200} image={item.photo} />
               <CardContent>
                 <Typography
                   className="product-card-title"
@@ -35,14 +39,13 @@ function AllProductPage() {
                 <ul>
                   <li>
                     <span>Название:</span>
-                    <span>{item.name}</span>
+                    <span>{item.taste}</span>
                   </li>
                   <li>
                     <span>Цена:</span>
                     <span>{item.price}</span>
                   </li>
                 </ul>
-                <Button>Добавить в корзину</Button>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +53,6 @@ function AllProductPage() {
       </Container>
     </div>
   );
-  return <div>AllProductPage</div>;
 }
 
 export default AllProductPage;

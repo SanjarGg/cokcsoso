@@ -1,9 +1,10 @@
 import React from "react";
 import { makaroonsApi } from "../helpers/Const";
 
-export const ClientContext = React.ClientContext();
+export const ClientContext = React.createContext();
+
 const reducer = (state, action) => {
-  if (action.payload === "GET_MAKAROONS") {
+  if (action.type === "GET_MAKAROONS") {
     return {
       ...state,
       makaroons: action.payload,
@@ -13,7 +14,7 @@ const reducer = (state, action) => {
 };
 
 function ClientProvider({ children }) {
-  const [state, dispatch] = React.useRedecer(reducer, {
+  const [state, dispatch] = React.useReducer(reducer, {
     makaroons: [],
   });
 
@@ -30,7 +31,7 @@ function ClientProvider({ children }) {
   };
 
   const data = {
-    makaroons,
+    makaroons: state.makaroons,
     getMakaroons,
   };
 
