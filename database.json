@@ -13,6 +13,13 @@
       "price": 190,
       "photo": "https://i.pinimg.com/236x/a1/9b/3d/a19b3d9ec17d10858191007b96f20e4c.jpg",
       "id": 7
+    },
+    {
+      "name": "oleg",
+      "taste": "pool",
+      "price": 180,
+      "photo": "https://www.piesandtacos.com/wp-content/uploads/2020/12/galaxy-macarons-2.jpg",
+      "id": 8
     }
   ]
 }

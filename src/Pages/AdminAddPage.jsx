@@ -41,31 +41,36 @@ function AdminAddPage() {
           }}
         >
           <TextField
+            className="text-field"
             value={name}
             onChange={(e) => setName(e.target.value)}
             label="Название"
             variant="standard"
           />
           <TextField
+            className="text-field"
             value={taste}
             onChange={(e) => setTaste(e.target.value)}
             label="Вкус"
             variant="standard"
           />
           <TextField
+            className="text-field"
             value={price}
             onChange={(e) => setPrice(parseInt(e.target.value))}
             label="Цена"
             variant="standard"
             type="number"
           />
+
           <TextField
+            className="text-field"
             value={photo}
             onChange={(e) => setPhoto(e.target.value)}
             label="Картинка"
             variant="standard"
           />
-          <Button variant="outlined" type="submit">
+          <Button className="button-add" variant="outlined" type="submit">
             Добавить
           </Button>
         </form>
