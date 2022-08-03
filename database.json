@@ -1,11 +1,18 @@
 {
   "makaroons": [
     {
-      "name": "sancho",
-      "taste": "coca-cola",
-      "price": 1000,
+      "name": "sanjar",
+      "taste": "fanta",
+      "price": 999,
       "id": 6,
       "photo": "https://www.indulgewithmimi.com/wp-content/uploads/2020/10/tips-how-to-bake-round-macaron-shells.jpg"
+    },
+    {
+      "name": "tima gamboll",
+      "taste": "bablgum",
+      "price": 190,
+      "photo": "https://i.pinimg.com/236x/a1/9b/3d/a19b3d9ec17d10858191007b96f20e4c.jpg",
+      "id": 7
     }
   ]
 }

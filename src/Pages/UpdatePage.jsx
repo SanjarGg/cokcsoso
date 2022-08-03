@@ -38,7 +38,7 @@ function UpdatePage() {
               <TableCell>{item.name}</TableCell>
               <TableCell>{item.taste}</TableCell>
               <TableCell>{item.price}сом</TableCell>
-              <TableCell>{item.photo}</TableCell>
+              {/* <TableCell>{item.photo}</TableCell> */}
               <TableCell>
                 <img width={100} src={item.photo} alt="" />
               </TableCell>

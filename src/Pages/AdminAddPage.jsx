@@ -16,7 +16,7 @@ function AdminAddPage() {
       name: name.trim(),
       taste: taste.trim(),
       price,
-      photo: price.trim(),
+      photo: photo.trim(),
     };
     for (let i in newMakaroons) {
       if (!newMakaroons[i]) {
