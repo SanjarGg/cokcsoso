@@ -2,8 +2,8 @@
   "makaroons": [
     {
       "name": "sancho",
-      "brand": "felishis",
-      "price": 555,
+      "taste": "coca-cola",
+      "price": 1000,
       "id": 6,
       "photo": "https://www.indulgewithmimi.com/wp-content/uploads/2020/10/tips-how-to-bake-round-macaron-shells.jpg"
     }

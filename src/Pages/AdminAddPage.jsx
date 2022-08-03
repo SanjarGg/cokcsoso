@@ -14,8 +14,9 @@ function AdminAddPage() {
   const handleSubmit = () => {
     const newMakaroons = {
       name: name.trim(),
-      brand: taste.trim(),
+      taste: taste.trim(),
       price,
+      photo: price.trim(),
     };
     for (let i in newMakaroons) {
       if (!newMakaroons[i]) {

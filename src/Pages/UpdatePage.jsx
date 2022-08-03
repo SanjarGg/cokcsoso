@@ -36,9 +36,9 @@ function UpdatePage() {
             <TableRow key={item.id}>
               <TableCell>{index + 1}</TableCell>
               <TableCell>{item.name}</TableCell>
-              <TableCell>{item.brand}</TableCell>
-              <TableCell>{item.photo}</TableCell>
+              <TableCell>{item.taste}</TableCell>
               <TableCell>{item.price}сом</TableCell>
+              <TableCell>{item.photo}</TableCell>
               <TableCell>
                 <img width={100} src={item.photo} alt="" />
               </TableCell>
