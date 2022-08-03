@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import ClientProvider from "./contexts/ClientProvider";
 import AdminProvider from "./contexts/AdminProvider";
 import AdminEditPage from "./Pages/AdminEditPage";
 import AllProductPage from "./Pages/AllProductPage";
@@ -12,19 +13,21 @@ import AdminAddPage from "./Pages/AdminAddPage";
 function Navigation() {
   return (
     <div>
-      <AdminProvider>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/adminadd" element={<AdminAddPage />} />
-            <Route path="/update" element={<UpdatePage />} />
-            <Route path="/admin/edit/:id" element={<AdminEditPage />} />
-            <Route path="/allsweets" element={<AllProductPage />} />
-            <Route path="/onlybox" element={<BoxPage />} />
-          </Routes>
-        </BrowserRouter>
-      </AdminProvider>
+      <ClientProvider>
+        <AdminProvider>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/adminadd" element={<AdminAddPage />} />
+              <Route path="/update" element={<UpdatePage />} />
+              <Route path="/allsweets" element={<AllProductPage />} />
+              <Route path="/onlybox" element={<BoxPage />} />
+              <Route path="/admin/edit/:id" element={<AdminEditPage />} />
+            </Routes>
+          </BrowserRouter>
+        </AdminProvider>
+      </ClientProvider>
     </div>
   );
 }
