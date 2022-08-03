@@ -50,6 +50,7 @@ function AllProductPage() {
       </Container>
     </div>
   );
+  return <div>AllProductPage</div>;
 }
 
 export default AllProductPage;
