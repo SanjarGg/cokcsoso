@@ -8,11 +8,18 @@
       "photo": "https://www.indulgewithmimi.com/wp-content/uploads/2020/10/tips-how-to-bake-round-macaron-shells.jpg"
     },
     {
-      "name": "tima gamboll",
-      "taste": "bablgum",
-      "price": 190,
-      "photo": "https://i.pinimg.com/236x/a1/9b/3d/a19b3d9ec17d10858191007b96f20e4c.jpg",
-      "id": 7
+      "name": "Клубничное Мароженое",
+      "taste": "клубника",
+      "price": 180,
+      "photo": "https://img.povar.ru/main/ca/02/63/4b/domashnie_makarons_makaruni-393984.jpg",
+      "id": 8
+    },
+    {
+      "name": "Радуга",
+      "taste": "Фруктовый микс",
+      "price": 180,
+      "photo": "https://www.povarenok.ru/data/cache/2016dec/25/02/1856115_91483-710x550x.jpg",
+      "id": 9
     }
   ]
 }
