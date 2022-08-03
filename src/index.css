@@ -23,3 +23,13 @@
   flex-wrap: wrap;
   column-gap: 55px;
 }
+
+
+.admi-add-page form{
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+font-size: 18px;
+height: 300px;
+
+}
