@@ -3,19 +3,27 @@
   padding: 0;
 }
 
+.all-products h2 {
+  padding-top: 40px;
+ padding-bottom: 60px;
+}
+
 .products-card {
-  width: 300px;
- 
+  width: 30%;
+  margin-bottom: 55px;
+  box-shadow: rgba(255, 0, 221, 0.23) 50px 50px 50px 50px;
 }
 
 .products-card img {
   object-fit: contain;
-  
 }
 
 .products {
-  box-shadow: rgba(167, 1, 145, 0.23) 0px 30px 30px -20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 55px;
 }
+
 
 .admi-add-page form{
 display: flex;
