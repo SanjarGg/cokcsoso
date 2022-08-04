@@ -6,13 +6,14 @@ import {
   CardContent,
   Typography,
   Button,
+  Pagination,
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
 import { AdminContext } from "../contexts/AdminProvider";
 
 function RegularMakaroonsPage() {
   const { justmakaroons, getOnlyMakaroons } = React.useContext(AdminContext);
-
+  const { pagesCount, setCurrentPage } = React.useContext(ClientContext);
   React.useEffect(() => {
     getOnlyMakaroons();
   }, []);
@@ -49,6 +50,14 @@ function RegularMakaroonsPage() {
           ))}
         </div>
       </Container>
+      <div className="pagination-block">
+        <Pagination
+          onChange={(_, newValue) => setCurrentPage(newValue)}
+          count={pagesCount}
+          shape="rounded"
+          color="secondary"
+        />
+      </div>
     </div>
   );
 }
