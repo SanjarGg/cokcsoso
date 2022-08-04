@@ -8,10 +8,6 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <h3 className="logo">the Taste</h3>
-        {/*
-        if large screen ma xa bhane Mobile add huxa
-        if mobile screen ma xa bhane nav-links-mobile add huxa
-        */}
         <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
           onClick={() => setMobile(false)}
@@ -25,10 +21,10 @@ const Navbar = () => {
           <Link to="/onlybox" className="Onlu-box">
             <li>Only Box</li>
           </Link>
+          <Link to="/onlymakaroons" className="Onlu-makaroons">
+            <li>Only Makaroons</li>
+          </Link>
         </ul>
-        {/* 
-        whenever we click on button = setMobile(!Mobile) ==  is mobile oppsite to setMobile 
-        */}
       </nav>
     </>
   );

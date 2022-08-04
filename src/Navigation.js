@@ -9,6 +9,7 @@ import BoxPage from "./Pages/BoxPage";
 import MainPage from "./Pages/MainPage";
 import UpdatePage from "./Pages/UpdatePage";
 import AdminAddPage from "./Pages/AdminAddPage";
+import RegularMakaroonsPage from "./Pages/RegularMakaroonsPage";
 
 function Navigation() {
   return (
@@ -23,6 +24,7 @@ function Navigation() {
               <Route path="/update" element={<UpdatePage />} />
               <Route path="/allsweets" element={<AllProductPage />} />
               <Route path="/onlybox" element={<BoxPage />} />
+              <Route path="/onlymakaroons" element={<RegularMakaroonsPage />} />
               <Route path="/admin/edit/:id" element={<AdminEditPage />} />
             </Routes>
           </BrowserRouter>

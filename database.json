@@ -5,44 +5,48 @@
       "taste": "клубничный",
       "price": 180,
       "photo": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-12-Macarons%2Fmacarons-1",
-      "id": 1
+      "id": 1,
+      "type": "regular"
     },
     {
       "name": "Шоколадный",
       "taste": "Чизкейк",
-      "name": "Клубничное Мароженое",
-      "taste": "клубника",
       "price": 180,
       "photo": "https://houseofnasheats.com/wp-content/uploads/2020/03/Chocolate-Macarons-11.jpg",
-      "id": 2
+      "id": 2,
+      "type": "regular"
     },
     {
       "name": "Классический",
       "taste": "Классика",
       "price": 180,
       "photo": "https://curlygirlkitchen.com/wp-content/uploads/2021/01/Vanilla-Bean-Chocolate-French-Macarons-003.jpg",
-      "id": 3
+      "id": 3,
+      "type": "regular"
     },
     {
       "name": "Лесное чудо",
       "taste": "Фисташка",
       "price": 180,
       "photo": "https://www.momlovesbaking.com/wp-content/uploads/2021/05/Mint-Chocolate-Filled-Macaron-Cookies.jpg",
-      "id": 4
+      "id": 4,
+      "type": "regular"
     },
     {
       "name": "Холодное Морожное",
       "taste": "Пламибир",
       "price": 180,
       "photo": "https://cookingwithkarli.com/wp-content/uploads/2021/05/macarons-11.jpg",
-      "id": 5
+      "id": 5,
+      "type": "regular"
     },
     {
       "name": "Вкусно и Точка",
       "taste": "Фруктовый Микс",
       "price": 180,
       "photo": "https://halifaxbloggers.ca/isaynomato/wp-content/uploads/sites/41/2016/06/IMG_8767.jpg",
-      "id": 6
+      "id": 6,
+      "type": "regular"
     },
     {
       "name": "Лимон",
@@ -50,7 +54,6 @@
       "price": 180,
       "photo": "https://www.theredheadbaker.com/wp-content/uploads/2020/04/lemon-macarons-instagram.jpg",
       "id": 7
-
     },
     {
       "name": "Зомби Макаронс",
@@ -64,7 +67,8 @@
       "taste": "Ананас",
       "price": 180,
       "photo": "https://mattadlard.com/wp-content/uploads/2020/05/IMG_0348.jpg",
-      "id": 9
+      "id": 9,
+      "type": "regular"
     },
     {
       "name": "Пони",
@@ -72,6 +76,14 @@
       "price": 180,
       "photo": "https://recipesblob.oetker.com/files/96b1ad47326547e0aed40738682b5e3e/9e07971e896b475c9e1cdbf635dcc6f9/750x910/raiinbow-macaron-2.jpg",
       "id": 10
+    },
+    {
+      "name": "dwa",
+      "taste": "daw",
+      "price": 213,
+      "photo": "awd",
+      "type": "box",
+      "id": 11
     }
   ]
 }
