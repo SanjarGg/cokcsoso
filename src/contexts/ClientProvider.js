@@ -17,8 +17,8 @@ function ClientProvider({ children }) {
   const [state, dispatch] = React.useReducer(reducer, {
     makaroons: [],
   });
-
-  const getMakaroons = () => {
+  // ! READ
+  const getMakaroons = (makaroons) => {
     fetch(makaroonsApi)
       .then((res) => res.json())
       .then((data) => {
