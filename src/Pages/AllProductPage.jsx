@@ -17,8 +17,6 @@ function AllProductPage() {
     getMakaroons();
   }, []);
 
-  console.log(makaroons);
-
   return (
     <div className="all-products">
       <Container>
