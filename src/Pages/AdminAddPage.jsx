@@ -1,15 +1,23 @@
 import React from "react";
-import { Container, TextField, Button } from "@mui/material";
+import {
+  Container,
+  TextField,
+  Button,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+} from "@mui/material";
 import { AdminContext } from "../contexts/AdminProvider";
 
 // ! Add
 function AdminAddPage() {
   const { sendMakaroons } = React.useContext(AdminContext);
-
   const [name, setName] = React.useState("");
   const [taste, setTaste] = React.useState("");
   const [price, setPrice] = React.useState("");
   const [photo, setPhoto] = React.useState("");
+  const [type, setType] = React.useState("");
 
   const handleSubmit = () => {
     const newMakaroons = {
@@ -17,6 +25,7 @@ function AdminAddPage() {
       taste: taste.trim(),
       price,
       photo: photo.trim(),
+      type: type.trim(),
     };
     for (let i in newMakaroons) {
       if (!newMakaroons[i]) {
@@ -29,11 +38,12 @@ function AdminAddPage() {
     setTaste("");
     setPrice("");
     setPhoto("");
+    setType("");
   };
   return (
     <div className="admi-add-page">
       <Container>
-        <h1>Новый Макаронс!</h1>
+        <h1>Новый Вкусняшка!</h1>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -62,7 +72,6 @@ function AdminAddPage() {
             variant="standard"
             type="number"
           />
-
           <TextField
             className="text-field"
             value={photo}
@@ -70,6 +79,17 @@ function AdminAddPage() {
             label="Картинка"
             variant="standard"
           />
+          <FormControl variant="standard">
+            <InputLabel>Вид ТовараВ</InputLabel>
+            <Select
+              value={type}
+              onChange={(e) => setType(e.target.value)}
+              label="Bид Товара"
+            >
+              <MenuItem value="box">Box</MenuItem>
+              <MenuItem value="regular">Makaroon</MenuItem>
+            </Select>
+          </FormControl>
           <Button className="button-add" variant="outlined" type="submit">
             Добавить
           </Button>

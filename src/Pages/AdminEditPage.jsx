@@ -1,7 +1,15 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { AdminContext } from "../contexts/AdminProvider";
-import { Container, TextField, Button } from "@mui/material";
+import {
+  Container,
+  TextField,
+  Button,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+} from "@mui/material";
 
 function AdminEditPage() {
   const { getMakaroonsToEdit, makaroonsEdit, saveEditedMakaroons } =
@@ -13,6 +21,7 @@ function AdminEditPage() {
   const [taste, setTaste] = React.useState("");
   const [price, setPrice] = React.useState("");
   const [photo, setPhoto] = React.useState("");
+  const [type, setType] = React.useState("");
 
   const handleSubmit = () => {
     const editedMakaroons = {
@@ -20,6 +29,7 @@ function AdminEditPage() {
       taste,
       price,
       photo,
+      type,
       id,
     };
     for (let i in editedMakaroons) {
@@ -31,7 +41,7 @@ function AdminEditPage() {
       }
     }
     saveEditedMakaroons(editedMakaroons);
-    navigate("/admin");
+    navigate("/update");
   };
 
   React.useState(() => {
@@ -44,6 +54,7 @@ function AdminEditPage() {
       setTaste(makaroonsEdit.taste);
       setPrice(makaroonsEdit.price);
       setPhoto(makaroonsEdit.photo);
+      setType(makaroonsEdit.type);
     }
   }, [makaroonsEdit]);
 
@@ -82,6 +93,17 @@ function AdminEditPage() {
             label="Картинкиа"
             variant="standard"
           />
+          <FormControl variant="standard">
+            <InputLabel>Вид Товар</InputLabel>
+            <Select
+              value={type}
+              onChange={(e) => setType(e.target.value)}
+              label="Bид Товара"
+            >
+              <MenuItem value="box">Box</MenuItem>
+              <MenuItem value="regular">Makaroon</MenuItem>
+            </Select>
+          </FormControl>
           <Button variant="outlined" type="submit">
             Добавить
           </Button>

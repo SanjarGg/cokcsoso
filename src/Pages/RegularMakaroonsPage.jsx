@@ -10,20 +10,19 @@ import {
 import { ClientContext } from "../contexts/ClientProvider";
 import { AdminContext } from "../contexts/AdminProvider";
 
-function BoxPage() {
-  // const { getBoxMakaroons } = React.useContext(ClientContext);
-  const { boxmakaroonos, getBoxMakaroons } = React.useContext(AdminContext);
+function RegularMakaroonsPage() {
+  const { justmakaroons, getOnlyMakaroons } = React.useContext(AdminContext);
 
   React.useEffect(() => {
-    getBoxMakaroons();
+    getOnlyMakaroons();
   }, []);
 
   return (
     <div className="all-products">
       <Container>
-        <h2>Все боксы</h2>
+        <h2>Все Макаронсы</h2>
         <div className="products">
-          {boxmakaroonos.map((item) => (
+          {justmakaroons.map((item) => (
             <Card key={item.id} className="products-card">
               <CardMedia component="img" height={200} image={item.photo} />
               <CardContent>
@@ -54,4 +53,4 @@ function BoxPage() {
   );
 }
 
-export default BoxPage;
+export default RegularMakaroonsPage;

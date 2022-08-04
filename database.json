@@ -5,83 +5,96 @@
       "taste": "клубничный",
       "price": 180,
       "photo": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-12-Macarons%2Fmacarons-1",
-      "id": 1
+      "id": 1,
+      "type": "regular"
     },
     {
-<<<<<<< HEAD
       "name": "Шоколадный",
       "taste": "Чизкейк",
-=======
-      "name": "Клубничное Мароженое",
-      "taste": "клубника",
->>>>>>> b66c18b1039ee92b0bf1910f46c86d977655101f
       "price": 180,
       "photo": "https://houseofnasheats.com/wp-content/uploads/2020/03/Chocolate-Macarons-11.jpg",
-      "id": 2
+      "id": 2,
+      "type": "regular"
     },
     {
       "name": "Классический",
       "taste": "Классика",
       "price": 180,
-<<<<<<< HEAD
       "photo": "https://curlygirlkitchen.com/wp-content/uploads/2021/01/Vanilla-Bean-Chocolate-French-Macarons-003.jpg",
-      "id": 3
+      "id": 3,
+      "type": "regular"
     },
     {
       "name": "Лесное чудо",
       "taste": "Фисташка",
       "price": 180,
       "photo": "https://www.momlovesbaking.com/wp-content/uploads/2021/05/Mint-Chocolate-Filled-Macaron-Cookies.jpg",
-      "id": 4
+      "id": 4,
+      "type": "regular"
     },
     {
       "name": "Холодное Морожное",
       "taste": "Пламибир",
       "price": 180,
       "photo": "https://cookingwithkarli.com/wp-content/uploads/2021/05/macarons-11.jpg",
-      "id": 5
+      "id": 5,
+      "type": "regular"
     },
     {
       "name": "Вкусно и Точка",
       "taste": "Фруктовый Микс",
       "price": 180,
       "photo": "https://halifaxbloggers.ca/isaynomato/wp-content/uploads/sites/41/2016/06/IMG_8767.jpg",
-      "id": 6
+      "id": 6,
+      "type": "regular"
     },
     {
       "name": "Лимон",
       "taste": "Лимон",
       "price": 180,
       "photo": "https://www.theredheadbaker.com/wp-content/uploads/2020/04/lemon-macarons-instagram.jpg",
-      "id": 7
-=======
-      "photo": "https://www.povarenok.ru/data/cache/2016dec/25/02/1856115_91483-710x550x.jpg",
-      "id": 9
->>>>>>> b66c18b1039ee92b0bf1910f46c86d977655101f
+      "id": 7,
+      "type": "regular"
     },
     {
       "name": "Зомби Макаронс",
       "taste": "Фисташка",
       "price": 180,
       "photo": "https://sugarandcharm.com/wp-content/uploads/2020/10/Frankenstein-Macarons-_-18.jpg",
-      "id": 8
-<<<<<<< HEAD
+      "id": 8,
+      "type": "regular"
     },
     {
       "name": "SpangeBob",
       "taste": "Ананас",
       "price": 180,
       "photo": "https://mattadlard.com/wp-content/uploads/2020/05/IMG_0348.jpg",
-      "id": 9
+      "id": 9,
+      "type": "regular"
     },
     {
       "name": "Пони",
       "taste": "Воздушный Зефир",
       "price": 180,
       "photo": "https://recipesblob.oetker.com/files/96b1ad47326547e0aed40738682b5e3e/9e07971e896b475c9e1cdbf635dcc6f9/750x910/raiinbow-macaron-2.jpg",
-      "id": 10
-=======
->>>>>>> b66c18b1039ee92b0bf1910f46c86d977655101f
+      "id": 10,
+      "type": "regular"
+    },
+    {
+      "name": "cola",
+      "taste": "coca-cola",
+      "price": 75,
+      "photo": "https://data.kaktus.media/image/big/2022-06-19_00-50-29_123953.jpg",
+      "id": 11,
+      "type": "box"
+    },
+    {
+      "name": "tima box",
+      "taste": "tuti-fruti",
+      "price": 100000,
+      "photo": "https://i.pinimg.com/236x/ae/6a/da/ae6ada59e6c6bf9835c72e81a5baebc3--gumball.jpg",
+      "type": "box",
+      "id": 12
     }
   ]
 }
