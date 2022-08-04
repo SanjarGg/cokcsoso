@@ -53,16 +53,14 @@
       "taste": "Лимон",
       "price": 180,
       "photo": "https://www.theredheadbaker.com/wp-content/uploads/2020/04/lemon-macarons-instagram.jpg",
-      "id": 7,
-      "type": "regular"
+      "id": 7
     },
     {
       "name": "Зомби Макаронс",
       "taste": "Фисташка",
       "price": 180,
       "photo": "https://sugarandcharm.com/wp-content/uploads/2020/10/Frankenstein-Macarons-_-18.jpg",
-      "id": 8,
-      "type": "regular"
+      "id": 8
     },
     {
       "name": "SpangeBob",
@@ -77,24 +75,15 @@
       "taste": "Воздушный Зефир",
       "price": 180,
       "photo": "https://recipesblob.oetker.com/files/96b1ad47326547e0aed40738682b5e3e/9e07971e896b475c9e1cdbf635dcc6f9/750x910/raiinbow-macaron-2.jpg",
-      "id": 10,
-      "type": "regular"
+      "id": 10
     },
     {
-      "name": "cola",
-      "taste": "coca-cola",
-      "price": 75,
-      "photo": "https://data.kaktus.media/image/big/2022-06-19_00-50-29_123953.jpg",
-      "id": 11,
-      "type": "box"
-    },
-    {
-      "name": "tima box",
-      "taste": "tuti-fruti",
-      "price": 100000,
-      "photo": "https://i.pinimg.com/236x/ae/6a/da/ae6ada59e6c6bf9835c72e81a5baebc3--gumball.jpg",
+      "name": "dwa",
+      "taste": "daw",
+      "price": 213,
+      "photo": "awd",
       "type": "box",
-      "id": 12
+      "id": 11
     }
   ]
 }
