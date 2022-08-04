@@ -23,12 +23,12 @@ li {
   color: white;
   background: rgb(240, 167, 179);
   box-shadow: rgba(167, 1, 145, 0.23) 0px 30px 30px -20px;
-
-  /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
 }
+
 .logo {
   font-size: 30px;
 }
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -43,23 +43,28 @@ li {
   cursor: pointer;
   text-transform: capitalize;
 }
+
 .hero {
   text-align: center;
   margin-top: 15%;
 }
+
 .hero h1 {
   text-align: center;
   font-size: 80px;
 }
+
 .mobile-menu-icon {
   display: none;
 }
+
 button {
   border: none;
   text-decoration: none;
   font-size: 20px;
   background: none;
 }
+
 @media (max-width: 768px) {
   .logo {
     display: flex;
@@ -70,6 +75,7 @@ button {
   .nav-links {
     display: none;
   }
+
   .nav-links-mobile {
     position: absolute;
     display: block;
@@ -81,18 +87,20 @@ button {
     width: 100%;
     background-color: white;
   }
-  ul li {
 
+  ul li {
     width: 100%;
     transition: all 0.5s ease-in-out;
-
   }
+
   .mobile-menu-icon {
     position: absolute;
     display: block;
     right: 20px;
   }
+
   .hero h1 {
     font-size: 50px;
   }
 }
+
