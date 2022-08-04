@@ -8,7 +8,6 @@
       "photo": "https://www.indulgewithmimi.com/wp-content/uploads/2020/10/tips-how-to-bake-round-macaron-shells.jpg"
     },
     {
-<<<<<<< HEAD
       "name": "Клубничное Мароженое",
       "taste": "клубника",
       "price": 180,
@@ -21,12 +20,6 @@
       "price": 180,
       "photo": "https://www.povarenok.ru/data/cache/2016dec/25/02/1856115_91483-710x550x.jpg",
       "id": 9
-=======
-      "name": "tima gamboll",
-      "taste": "bablgum",
-      "price": 190,
-      "photo": "https://i.pinimg.com/236x/a1/9b/3d/a19b3d9ec17d10858191007b96f20e4c.jpg",
-      "id": 7
     },
     {
       "name": "oleg",
@@ -34,7 +27,6 @@
       "price": 180,
       "photo": "https://www.piesandtacos.com/wp-content/uploads/2020/12/galaxy-macarons-2.jpg",
       "id": 8
->>>>>>> 94b7526cef46b94034c22a345ff51f19d86ead39
     }
   ]
 }
