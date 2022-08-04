@@ -5,17 +5,21 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Button,
   Pagination,
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
 
 function AllProductPage() {
-  const { getMakaroons, makaroons } = React.useContext(ClientContext);
+  const { getMakaroons, makaroons, currentPage, pagesCount, setCurrentPage } =
+    React.useContext(ClientContext);
 
   React.useEffect(() => {
     getMakaroons();
   }, []);
+
+  React.useEffect(() => {
+    getMakaroons();
+  }, [currentPage]);
 
   return (
     <div className="all-products">
@@ -47,6 +51,14 @@ function AllProductPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="pagination-block">
+          <Pagination
+            onChange={(_, newValue) => setCurrentPage(newValue)}
+            count={pagesCount}
+            shape="rounded"
+            color="secondary"
+          />
         </div>
       </Container>
     </div>

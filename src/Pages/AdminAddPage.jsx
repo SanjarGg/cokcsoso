@@ -80,7 +80,7 @@ function AdminAddPage() {
             variant="standard"
           />
           <FormControl variant="standard">
-            <InputLabel>Вид ТовараВ</InputLabel>
+            <InputLabel>Вид Товара</InputLabel>
             <Select
               value={type}
               onChange={(e) => setType(e.target.value)}

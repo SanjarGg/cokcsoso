@@ -6,6 +6,7 @@ import {
   CardContent,
   Typography,
   Button,
+  Pagination,
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
 import { AdminContext } from "../contexts/AdminProvider";
@@ -13,7 +14,7 @@ import { AdminContext } from "../contexts/AdminProvider";
 function BoxPage() {
   // const { getBoxMakaroons } = React.useContext(ClientContext);
   const { boxmakaroonos, getBoxMakaroons } = React.useContext(AdminContext);
-
+  const { pagesCount, setCurrentPage } = React.useContext(ClientContext);
   React.useEffect(() => {
     getBoxMakaroons();
   }, []);
@@ -50,6 +51,14 @@ function BoxPage() {
           ))}
         </div>
       </Container>
+      <div className="pagination-block">
+        <Pagination
+          onChange={(_, newValue) => setCurrentPage(newValue)}
+          count={pagesCount}
+          shape="rounded"
+          color="secondary"
+        />
+      </div>
     </div>
   );
 }

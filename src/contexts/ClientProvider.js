@@ -17,10 +17,19 @@ function ClientProvider({ children }) {
   const [state, dispatch] = React.useReducer(reducer, {
     makaroons: [],
   });
+
   // ! READ
-  const getMakaroons = (makaroons) => {
-    fetch(makaroonsApi)
-      .then((res) => res.json())
+  const limit = 12;
+  const [pagesCount, setPagesCount] = React.useState(1);
+  const [currentPage, setCurrentPage] = React.useState(1);
+
+  const getMakaroons = () => {
+    fetch(`${makaroonsApi}?q=&_limit=${limit}&_page=${currentPage}`)
+      .then((res) => {
+        let count = Math.ceil(res.headers.get("X-Total-Count") / limit);
+        setPagesCount(count);
+        return res.json();
+      })
       .then((data) => {
         let action = {
           type: "GET_MAKAROONS",
@@ -32,7 +41,10 @@ function ClientProvider({ children }) {
 
   const data = {
     makaroons: state.makaroons,
+    pagesCount,
+    currentPage,
     getMakaroons,
+    setCurrentPage,
   };
 
   return (

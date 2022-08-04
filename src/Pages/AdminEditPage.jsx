@@ -94,7 +94,7 @@ function AdminEditPage() {
             variant="standard"
           />
           <FormControl variant="standard">
-            <InputLabel>Вид Товар</InputLabel>
+            <InputLabel>Вид Товара</InputLabel>
             <Select
               value={type}
               onChange={(e) => setType(e.target.value)}
