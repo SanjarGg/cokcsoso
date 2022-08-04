@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+.all-products{
+  background-image: url(./image/background1.jpg)
+}
 
 .all-products h2 {
   padding-top: 40px;
@@ -15,7 +18,7 @@
 }
 
 .products-card img {
-  object-fit: contain;
+  object-fit: сover;
 }
 
 .products {
@@ -32,4 +35,8 @@ flex-direction: column;
 font-size: 18px;
 height: 300px;
 
+}
+
+.main-page{
+  background: url(./image/background2.jpg);
 }
