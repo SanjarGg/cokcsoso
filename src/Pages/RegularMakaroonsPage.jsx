@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
 import { AdminContext } from "../contexts/AdminProvider";
+import bay from "../assets/bay.jpg";
+import { Link } from "react-router-dom";
 
 function RegularMakaroonsPage() {
   const { justmakaroons, getOnlyMakaroons } = React.useContext(AdminContext);
@@ -50,6 +52,11 @@ function RegularMakaroonsPage() {
           ))}
         </div>
       </Container>
+      <div className="btn-bay">
+        <Link to="/bay">
+          <img src={bay} alt="bay icon" />
+        </Link>
+      </div>
       <div className="pagination-block">
         <Pagination
           onChange={(_, newValue) => setCurrentPage(newValue)}

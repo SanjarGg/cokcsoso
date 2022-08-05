@@ -22,10 +22,16 @@ function ClientProvider({ children }) {
   const limit = 12;
   const [pagesCount, setPagesCount] = React.useState(1);
   const [currentPage, setCurrentPage] = React.useState(1);
+<<<<<<< HEAD
   const [searchWord, setSearchWord] = React.useState("");
+=======
+  const [searchWord, setSeachWord] = React.useState("");
+>>>>>>> 963323bfc69126d02bce8f899d54aa153ff4e1f0
 
   const getMakaroons = () => {
-    fetch(`${makaroonsApi}?q=&_limit=${limit}&_page=${currentPage}`)
+    fetch(
+      `${makaroonsApi}?q=${searchWord}&_limit=${limit}&_page=${currentPage}`
+    )
       .then((res) => {
         let count = Math.ceil(res.headers.get("X-Total-Count") / limit);
         setPagesCount(count);
@@ -43,11 +49,17 @@ function ClientProvider({ children }) {
   const data = {
     makaroons: state.makaroons,
     pagesCount,
+    searchWord,
     currentPage,
     searchWord,
     getMakaroons,
     setCurrentPage,
+<<<<<<< HEAD
     setSearchWord,
+=======
+    setSeachWord,
+    searchWord,
+>>>>>>> 963323bfc69126d02bce8f899d54aa153ff4e1f0
   };
 
   return (
