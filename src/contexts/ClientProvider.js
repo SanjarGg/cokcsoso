@@ -22,6 +22,7 @@ function ClientProvider({ children }) {
   const limit = 12;
   const [pagesCount, setPagesCount] = React.useState(1);
   const [currentPage, setCurrentPage] = React.useState(1);
+  const [searchWord, setSearchWord] = React.useState("");
 
   const getMakaroons = () => {
     fetch(`${makaroonsApi}?q=&_limit=${limit}&_page=${currentPage}`)
@@ -43,8 +44,10 @@ function ClientProvider({ children }) {
     makaroons: state.makaroons,
     pagesCount,
     currentPage,
+    searchWord,
     getMakaroons,
     setCurrentPage,
+    setSearchWord,
   };
 
   return (

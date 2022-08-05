@@ -32,7 +32,6 @@ li {
 .nav-links {
   display: flex;
   justify-content: flex-end;
-  width: 75%;
 }
 
 .nav-links li {
@@ -65,6 +64,14 @@ button {
   background: none;
 }
 
+.search {
+  margin-top: 10px;
+}
+
+.menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .logo {
     display: flex;
@@ -72,8 +79,14 @@ button {
     top: 15px;
     left: 35px;
   }
+
   .nav-links {
     display: none;
+  }
+
+  .menu {
+    display: flex;
+    margin-left: 500px;
   }
 
   .nav-links-mobile {
@@ -88,19 +101,43 @@ button {
     background-color: white;
   }
 
-  ul li {
-    width: 100%;
-    transition: all 0.5s ease-in-out;
-  }
-
   .mobile-menu-icon {
     position: absolute;
     display: block;
     right: 20px;
   }
+}
 
-  .hero h1 {
-    font-size: 50px;
+@media all and (max-width:768px) {
+  .menu {
+    display: flex;
+    margin-left: 500px;
+    flex-flow: column nowrap;
+    position: fixed;
+  }
+  
+  .mobile-nav ul {
+    width: 45%;
+    height: 135px;
+    margin-top: 159px;
+    padding-top: 30px;
+    margin-left: 249px;
+    background: rgb(240, 167, 179);
+  }
+
+  .mobile-nav li {
+    padding-left: 10px;
+    text-align:start;
+    color: white;
+  }
+}
+
+@media all and (max-width:650px) {
+  .menu {
+    display: flex;
+    margin-left: 300px;
+    flex-flow: column nowrap;
+    position: fixed;
   }
 }
 
