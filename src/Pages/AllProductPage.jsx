@@ -8,6 +8,8 @@ import {
   Pagination,
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
+import bay from "../assets/bay.jpg";
+import { Link } from "react-router-dom";
 
 function AllProductPage() {
   const { getMakaroons, makaroons, currentPage, pagesCount, setCurrentPage } =
@@ -51,6 +53,11 @@ function AllProductPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="btn-bay">
+          <Link to="/bay">
+            <img src={bay} alt="bay icon" />
+          </Link>
         </div>
         <div className="pagination-block">
           <Pagination
