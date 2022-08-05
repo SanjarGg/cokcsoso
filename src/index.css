@@ -83,6 +83,7 @@ height: 300px;
   .products {
     justify-content: center;
   }
+  
   .products-card {
     width: 40%;
   }
@@ -98,4 +99,5 @@ height: 300px;
   .products-card {
     width: 70%;
   }
+
 }
