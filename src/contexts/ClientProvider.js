@@ -22,11 +22,7 @@ function ClientProvider({ children }) {
   const limit = 12;
   const [pagesCount, setPagesCount] = React.useState(1);
   const [currentPage, setCurrentPage] = React.useState(1);
-<<<<<<< HEAD
   const [searchWord, setSearchWord] = React.useState("");
-=======
-  const [searchWord, setSeachWord] = React.useState("");
->>>>>>> 963323bfc69126d02bce8f899d54aa153ff4e1f0
 
   const getMakaroons = () => {
     fetch(
@@ -54,12 +50,7 @@ function ClientProvider({ children }) {
     searchWord,
     getMakaroons,
     setCurrentPage,
-<<<<<<< HEAD
     setSearchWord,
-=======
-    setSeachWord,
-    searchWord,
->>>>>>> 963323bfc69126d02bce8f899d54aa153ff4e1f0
   };
 
   return (
