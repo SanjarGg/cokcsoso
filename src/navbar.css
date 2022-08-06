@@ -204,3 +204,24 @@ button {
     border-radius: 5%;
   }
 }
+
+@media all and (max-width:1000px) {
+.search-inp {
+display: flex;
+justify-content: start;
+/* margin-bottom: 10px; */
+}
+}
+
+@media all and (max-width:960px), (min-width: 900px) {
+  .search-inp input {
+  display: none;
+  }
+}
+
+  @media all and (max-width:800px ) {
+    .search-inp input {
+display:flex;
+margin-top: 60px;
+    }
+  }

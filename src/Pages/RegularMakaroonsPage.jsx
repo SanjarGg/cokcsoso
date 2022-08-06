@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
 import { AdminContext } from "../contexts/AdminProvider";
-import bay from "../assets/bay.jpg";
+import bay from "../assets/bay.png";
 import { Link } from "react-router-dom";
 
 function RegularMakaroonsPage() {

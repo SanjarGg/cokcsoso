@@ -47,7 +47,6 @@ function ClientProvider({ children }) {
     pagesCount,
     searchWord,
     currentPage,
-    searchWord,
     getMakaroons,
     setCurrentPage,
     setSearchWord,
