@@ -1,40 +1,108 @@
 {
   "makaroons": [
     {
-      "name": "sanjar",
-      "taste": "fanta",
-      "price": 999,
+      "name": "Фламинго",
+      "taste": "клубничный",
+      "price": 180,
+      "photo": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-12-Macarons%2Fmacarons-1",
+      "id": 1,
+      "type": "regular"
+    },
+    {
+      "name": "Шоколадный",
+      "taste": "Чизкейк",
+      "price": 180,
+      "photo": "https://houseofnasheats.com/wp-content/uploads/2020/03/Chocolate-Macarons-11.jpg",
+      "id": 2,
+      "type": "regular"
+    },
+    {
+      "name": "Классический",
+      "taste": "Классика",
+      "price": 180,
+      "photo": "https://curlygirlkitchen.com/wp-content/uploads/2021/01/Vanilla-Bean-Chocolate-French-Macarons-003.jpg",
+      "id": 3,
+      "type": "regular"
+    },
+    {
+      "name": "Лесное чудо",
+      "taste": "Фисташка",
+      "price": 180,
+      "photo": "https://www.momlovesbaking.com/wp-content/uploads/2021/05/Mint-Chocolate-Filled-Macaron-Cookies.jpg",
+      "id": 4,
+      "type": "regular"
+    },
+    {
+      "name": "Холодное Морожное",
+      "taste": "Пламибир",
+      "price": 180,
+      "photo": "https://cookingwithkarli.com/wp-content/uploads/2021/05/macarons-11.jpg",
+      "id": 5,
+      "type": "regular"
+    },
+    {
+      "name": "Вкусно и Точка",
+      "taste": "Фруктовый Микс",
+      "price": 180,
+      "photo": "https://halifaxbloggers.ca/isaynomato/wp-content/uploads/sites/41/2016/06/IMG_8767.jpg",
       "id": 6,
-      "photo": "https://www.indulgewithmimi.com/wp-content/uploads/2020/10/tips-how-to-bake-round-macaron-shells.jpg"
+      "type": "regular"
     },
     {
-<<<<<<< HEAD
-      "name": "Клубничное Мароженое",
-      "taste": "клубника",
+      "name": "Лимон",
+      "taste": "Лимон",
       "price": 180,
-      "photo": "https://img.povar.ru/main/ca/02/63/4b/domashnie_makarons_makaruni-393984.jpg",
-      "id": 8
+      "photo": "https://www.theredheadbaker.com/wp-content/uploads/2020/04/lemon-macarons-instagram.jpg",
+      "id": 7,
+      "type": "regular"
     },
     {
-      "name": "Радуга",
-      "taste": "Фруктовый микс",
+      "name": "Зомби Макаронс",
+      "taste": "Фисташка",
       "price": 180,
-      "photo": "https://www.povarenok.ru/data/cache/2016dec/25/02/1856115_91483-710x550x.jpg",
-      "id": 9
-=======
-      "name": "tima gamboll",
-      "taste": "bablgum",
-      "price": 190,
-      "photo": "https://i.pinimg.com/236x/a1/9b/3d/a19b3d9ec17d10858191007b96f20e4c.jpg",
-      "id": 7
+      "photo": "https://sugarandcharm.com/wp-content/uploads/2020/10/Frankenstein-Macarons-_-18.jpg",
+      "id": 8,
+      "type": "regular"
     },
     {
-      "name": "oleg",
-      "taste": "pool",
+      "name": "SpangeBob",
+      "taste": "Ананас",
       "price": 180,
-      "photo": "https://www.piesandtacos.com/wp-content/uploads/2020/12/galaxy-macarons-2.jpg",
-      "id": 8
->>>>>>> 94b7526cef46b94034c22a345ff51f19d86ead39
+      "photo": "https://mattadlard.com/wp-content/uploads/2020/05/IMG_0348.jpg",
+      "id": 9,
+      "type": "regular"
+    },
+    {
+      "name": "Пони",
+      "taste": "Воздушный Зефир",
+      "price": 180,
+      "photo": "https://recipesblob.oetker.com/files/96b1ad47326547e0aed40738682b5e3e/9e07971e896b475c9e1cdbf635dcc6f9/750x910/raiinbow-macaron-2.jpg",
+      "id": 10,
+      "type": "regular"
+    },
+    {
+      "name": "Клубничная Долина",
+      "taste": "Клубника, Малина",
+      "price": 1800,
+      "photo": "https://thumbs.dreamstime.com/b/%D1%80%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B4%D0%B5%D1%81%D0%B5%D1%80%D1%82-%D0%BC%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%BD-%D0%B8%D0%BB%D0%B8-%D0%BC%D0%B0%D0%BA%D0%B0%D1%80%D1%83%D0%BD%D1%8B-%D0%B2-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B5-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5-%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-158716460.jpg",
+      "type": "box",
+      "id": 11
+    },
+    {
+      "name": "Ягодный сет",
+      "taste": "Голубика, Малина, Киви, Банан",
+      "price": 1800,
+      "photo": "https://kartinkin.net/uploads/posts/2021-08/1629580672_16-kartinkin-com-p-makaroni-v-korobke-yeda-krasivo-foto-19.jpg",
+      "type": "box",
+      "id": 12
+    },
+    {
+      "name": "Зимний Холод",
+      "taste": "Пламбир",
+      "price": 1800,
+      "photo": "https://cakery.ru/image/cache/catalog/catalog/deserty-i-sladosti/makaruny/11-makaruny-v-korobke-1000x1000.jpg",
+      "type": "box",
+      "id": 13
     }
   ]
 }

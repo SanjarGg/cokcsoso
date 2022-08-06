@@ -5,19 +5,23 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Button,
   Pagination,
 } from "@mui/material";
 import { ClientContext } from "../contexts/ClientProvider";
+import bay from "../assets/bay.png";
+import { Link } from "react-router-dom";
 
 function AllProductPage() {
-  const { getMakaroons, makaroons } = React.useContext(ClientContext);
+  const { getMakaroons, makaroons, currentPage, pagesCount, setCurrentPage } =
+    React.useContext(ClientContext);
 
   React.useEffect(() => {
     getMakaroons();
   }, []);
 
-  console.log(makaroons);
+  React.useEffect(() => {
+    getMakaroons();
+  }, [currentPage]);
 
   return (
     <div className="all-products">
@@ -49,6 +53,19 @@ function AllProductPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="btn-bay">
+          <Link to="/bay">
+            <img src={bay} alt="bay icon" />
+          </Link>
+        </div>
+        <div className="pagination-block">
+          <Pagination
+            onChange={(_, newValue) => setCurrentPage(newValue)}
+            count={pagesCount}
+            shape="rounded"
+            color="secondary"
+          />
         </div>
       </Container>
     </div>
