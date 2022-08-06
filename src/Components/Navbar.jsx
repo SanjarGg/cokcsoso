@@ -8,7 +8,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false);
-  const { searchWord, setSearchWord } = React.useContext(ClientContext);
+  const { searchWord, setSearchWord, getMakaroons } =
+    React.useContext(ClientContext);
   const [isOpen, setIsOpen] = useState(false);
   const pages = [
     {
@@ -28,16 +29,41 @@ const Navbar = () => {
       path: "/onlymakaroons",
     },
   ];
+  React.useEffect(() => {
+    getMakaroons();
+  }, [searchWord]);
 
   return (
-    <>
-      <div className="navbar">
-        <h3 className="logo">the Taste</h3>
-        <div className="nav-left">
-          <ul
-            className={Mobile ? "nav-links-mobile" : "nav-links"}
-            onClick={() => setMobile(false)}
-          >
+    <div className="navbar">
+      <h3 className="logo">the Taste</h3>
+      <div className="search-inp">
+        <input
+          placeholder="Найти Вкусняшку..."
+          type="text"
+          value={searchWord}
+          onChange={(e) => {
+            setSearchWord(e.target.value);
+          }}
+        />
+      </div>
+      <div className="nav-left">
+        <ul
+          className={Mobile ? "nav-links-mobile" : "nav-links"}
+          onClick={() => setMobile(false)}
+        >
+          {pages.map((page) => (
+            <Link to={page.path} className="home">
+              <li>{page.name}</li>
+            </Link>
+          ))}
+        </ul>
+      </div>
+      <div className="menu">
+        <MenuIcon onClick={() => setIsOpen(!isOpen)} />
+      </div>
+      {isOpen && (
+        <div className="mobile-nav">
+          <ul>
             {pages.map((page) => (
               <Link to={page.path} className="home">
                 <li>{page.name}</li>
@@ -45,22 +71,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="menu">
-          <MenuIcon onClick={() => setIsOpen(!isOpen)} />
-        </div>
-        {isOpen && (
-          <div className="mobile-nav">
-            <ul>
-              {pages.map((page) => (
-                <Link to={page.path} className="home">
-                  <li>{page.name}</li>
-                </Link>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-    </>
+      )}
+    </div>
   );
 };
 
