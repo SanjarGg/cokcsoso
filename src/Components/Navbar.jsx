@@ -29,6 +29,9 @@ const Navbar = () => {
       path: "/onlymakaroons",
     },
   ];
+  React.useEffect(() => {
+    getMakaroons();
+  }, [searchWord]);
 
   React.useEffect(() => {
     getMakaroons();
@@ -37,6 +40,19 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h3 className="logo">the Taste</h3>
+<<<<<<< HEAD
+=======
+      <div className="search-inp">
+        <input
+          placeholder="Найти Вкусняшку..."
+          type="text"
+          value={searchWord}
+          onChange={(e) => {
+            setSearchWord(e.target.value);
+          }}
+        />
+      </div>
+>>>>>>> ab046d6892573d5e9785990d8a76acaa43e2bcbc
       <div className="nav-left">
         <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
