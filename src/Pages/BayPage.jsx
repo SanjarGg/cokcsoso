@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import insta from "../assets/insta.png";
 import telega from "../assets/telega.png";
@@ -40,5 +41,4 @@ function BayPage() {
     </div>
   );
 }
-
 export default BayPage;

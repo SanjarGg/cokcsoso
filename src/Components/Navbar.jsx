@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false);
-  const { searchWord, setSeachWord, getMakaroons } =
+  const { searchWord, setSearchWord, getMakaroons } =
     React.useContext(ClientContext);
   const [isOpen, setIsOpen] = useState(false);
   const pages = [
@@ -35,44 +35,36 @@ const Navbar = () => {
   }, [searchWord]);
 
   return (
-    <div className="navbar-swip">
-      <nav className="navbar">
-        <div className="left-navbar">
-          <div className="name-brand">
-            <h3 className="logo">the Taste</h3>
-          </div>
-          <div className="just-input">
-            <input
-              type="text"
-              value={searchWord}
-              onChange={(e) => {
-                setSeachWord(e.target.value);
-              }}
-              placeholder="Найти Вкусняшку..."
-              inputProps={{ "aria-label": "search" }}
-            />
-          </div>
-        </div>
-
+    <div className="navbar">
+      <h3 className="logo">the Taste</h3>
+      <div className="nav-left">
         <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
           onClick={() => setMobile(false)}
         >
-          <Link to="/" className="text-navbar">
-            <li>Home</li>
-          </Link>
-          <Link to="/allsweets" className="text-navbar">
-            <li>All</li>
-          </Link>
-          <Link to="/onlybox" className="text-navbar">
-            <li>Only Box</li>
-          </Link>
-          <Link to="/onlymakaroons" className="text-navbar">
-            <li>Only Makaroons</li>
-          </Link>
+          {pages.map((page) => (
+            <Link to={page.path} className="home">
+              <li>{page.name}</li>
+            </Link>
+          ))}
         </ul>
-      </nav>
+      </div>
+      <div className="menu">
+        <MenuIcon onClick={() => setIsOpen(!isOpen)} />
+      </div>
+      {isOpen && (
+        <div className="mobile-nav">
+          <ul>
+            {pages.map((page) => (
+              <Link to={page.path} className="home">
+                <li>{page.name}</li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
+
 export default Navbar;

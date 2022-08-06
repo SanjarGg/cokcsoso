@@ -92,6 +92,13 @@ height: 300px;
   display: flex;
   padding-top: 20px;
   margin-left: 40px;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  right: 40px;
+}
+.btn-bay img{
+  width: 150px;
 }
 
 @media all and (max-width: 1147px) {

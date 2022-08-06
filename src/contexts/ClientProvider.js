@@ -50,6 +50,9 @@ function ClientProvider({ children }) {
     getMakaroons,
     setCurrentPage,
     setSeachWord,
+    searchWord,
+    getMakaroons,
+    setCurrentPage,
   };
 
   return (
