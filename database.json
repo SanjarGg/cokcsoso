@@ -1,9 +1,9 @@
 {
   "makaroons": [
     {
-      "name": "Фламинго",
+      "name": "DoФламинго",
       "taste": "клубничный",
-      "price": 180,
+      "price": 220,
       "photo": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-12-Macarons%2Fmacarons-1",
       "id": 1,
       "type": "regular"
@@ -46,14 +46,6 @@
       "price": 180,
       "photo": "https://halifaxbloggers.ca/isaynomato/wp-content/uploads/sites/41/2016/06/IMG_8767.jpg",
       "id": 6,
-      "type": "regular"
-    },
-    {
-      "name": "Лимон",
-      "taste": "Лимон",
-      "price": 180,
-      "photo": "https://www.theredheadbaker.com/wp-content/uploads/2020/04/lemon-macarons-instagram.jpg",
-      "id": 7,
       "type": "regular"
     },
     {
@@ -103,6 +95,22 @@
       "photo": "https://cakery.ru/image/cache/catalog/catalog/deserty-i-sladosti/makaruny/11-makaruny-v-korobke-1000x1000.jpg",
       "type": "box",
       "id": 13
+    },
+    {
+      "name": "sfdsfs",
+      "taste": "dadads",
+      "price": 111,
+      "photo": "https://www.piesandtacos.com/wp-content/uploads/2020/12/galaxy-macarons-2.jpg",
+      "type": "regular",
+      "id": 14
+    },
+    {
+      "name": "Dastan",
+      "taste": "Молочный",
+      "price": 190,
+      "photo": "https://thecake-school.ru/assets/img/blog/macaron_nachinki-5.jpg",
+      "type": "regular",
+      "id": 15
     }
   ]
 }

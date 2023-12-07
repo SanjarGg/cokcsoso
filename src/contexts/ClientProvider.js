@@ -47,15 +47,9 @@ function ClientProvider({ children }) {
     pagesCount,
     searchWord,
     currentPage,
-<<<<<<< HEAD
-    getMakaroons,
     setCurrentPage,
     setSeachWord,
-    searchWord,
-=======
->>>>>>> ab046d6892573d5e9785990d8a76acaa43e2bcbc
     getMakaroons,
-    setCurrentPage,
   };
 
   return (
