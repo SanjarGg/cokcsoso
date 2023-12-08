@@ -43,7 +43,7 @@ function AdminAddPage() {
   return (
     <div className="admi-add-page">
       <Container>
-        <h1>Новый Вкусняшка!</h1>
+        <h1>Добавить товар</h1>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -61,7 +61,7 @@ function AdminAddPage() {
             className="text-field"
             value={taste}
             onChange={(e) => setTaste(e.target.value)}
-            label="Вкус"
+            label="состав и описание"
             variant="standard"
           />
           <TextField

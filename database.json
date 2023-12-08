@@ -1,14 +1,6 @@
 {
   "makaroons": [
     {
-      "name": "DoФламинго",
-      "taste": "клубничный",
-      "price": 220,
-      "photo": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-12-Macarons%2Fmacarons-1",
-      "id": 1,
-      "type": "regular"
-    },
-    {
       "name": "Шоколадный",
       "taste": "Чизкейк",
       "price": 180,
@@ -111,6 +103,22 @@
       "photo": "https://thecake-school.ru/assets/img/blog/macaron_nachinki-5.jpg",
       "type": "regular",
       "id": 15
+    },
+    {
+      "name": "Шефбургер",
+      "taste": "много курицы",
+      "price": 280,
+      "photo": "https://kfs-menu.ru/images/menu/shefburger-original-nyy.png",
+      "type": "regular",
+      "id": 16
+    },
+    {
+      "name": "Зимний сет",
+      "taste": "кофе и бургер",
+      "price": 350,
+      "photo": "https://pp.userapi.com/c636923/v636923055/4317f/UwZjK2uAVRM.jpg",
+      "type": "box",
+      "id": 17
     }
   ]
 }

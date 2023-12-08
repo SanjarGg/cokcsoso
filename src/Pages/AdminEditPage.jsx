@@ -77,7 +77,7 @@ function AdminEditPage() {
           <TextField
             value={taste}
             onChange={(e) => setTaste(e.target.value)}
-            label="Вкус"
+            label="описание и состав"
             variant="standard"
           />
           <TextField

@@ -19,11 +19,11 @@ const Navbar = () => {
       path: "/allsweets",
     },
     {
-      name: "Only Box",
+      name: "Sale",
       path: "/onlybox",
     },
     {
-      name: "Only Makaroons",
+      name: "food",
       path: "/onlymakaroons",
     },
   ];
@@ -34,10 +34,10 @@ const Navbar = () => {
   return (
     <div className="Container">
       <div className="navbar">
-        <h3 className="logo">the Taste</h3>
+        <h3 className="logo">Coocksoo</h3>
         <div className="search-inp">
           <input
-            placeholder="Найти Вкусняшку..."
+            placeholder="Найти Блюдо..."
             type="text"
             value={searchWord}
             onChange={(e) => {

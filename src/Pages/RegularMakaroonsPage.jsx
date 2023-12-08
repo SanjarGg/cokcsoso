@@ -23,7 +23,7 @@ function RegularMakaroonsPage() {
   return (
     <div className="all-products">
       <Container>
-        <h2>Все Макаронсы</h2>
+        <h2>Все Блюда</h2>
         <div className="products">
           {justmakaroons.map((item) => (
             <Card key={item.id} className="products-card">
